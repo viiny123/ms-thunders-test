@@ -1,8 +1,8 @@
 using FluentValidation;
-using Test.Thunders.Application.Base.Extension;
 using Test.Thunders.Application.Base.Error;
+using Test.Thunders.Application.Base.Extension;
 
-namespace Test.Thunders.Application.Person.V1.Commands.Create;
+namespace Test.Thunders.Application.TaskLists.V1.Commands.Create;
 
 public class CreateTaskListCommandValidation : AbstractValidator<CreateTaskListCommand>
 {

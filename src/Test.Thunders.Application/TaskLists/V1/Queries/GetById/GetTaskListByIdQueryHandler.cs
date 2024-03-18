@@ -4,7 +4,7 @@ using Test.Thunders.Application.Base;
 using Test.Thunders.Application.Base.Error;
 using Test.Thunders.Domain.AggregatesModel.TaskAggregate;
 
-namespace Test.Thunders.Application.Person.V1.Queries.GetById;
+namespace Test.Thunders.Application.TaskLists.V1.Queries.GetById;
 
 public class GetTaskListByIdQueryHandler : HandlerBase<GetTaskListByIdQuery>
 {

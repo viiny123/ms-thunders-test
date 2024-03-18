@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Test.Thunders.API.Extensions;
 using Test.Thunders.API.Presenters;
 using Test.Thunders.Application.Base.Error;
-using Test.Thunders.Application.Person.V1.Queries.Get;
+using Test.Thunders.Application.TaskLists.V1.Queries.Get;
 using Test.Thunders.Domain.AggregatesModel.TaskAggregate;
 using Test.Thunders.Domain.Base;
 

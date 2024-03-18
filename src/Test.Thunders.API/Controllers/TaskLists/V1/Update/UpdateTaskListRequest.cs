@@ -1,4 +1,4 @@
-using Test.Thunders.Application.Person.V1.Commands.Update;
+using Test.Thunders.Application.TaskLists.V1.Commands.Update;
 using Test.Thunders.Domain.AggregatesModel.TaskAggregate;
 
 namespace Test.Thunders.API.Controllers.TaskLists.V1.Update;

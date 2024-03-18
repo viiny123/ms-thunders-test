@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Test.Thunders.API.Presenters;
 using Test.Thunders.Application.Base.Error;
-using Test.Thunders.Application.Person.V1.Queries.GetById;
+using Test.Thunders.Application.TaskLists.V1.Queries.GetById;
 
 namespace Test.Thunders.API.Controllers.TaskLists.V1;
 

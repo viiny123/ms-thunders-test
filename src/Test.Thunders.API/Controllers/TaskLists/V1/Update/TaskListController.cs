@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Test.Thunders.API.Controllers.TaskLists.V1.Update;
 using Test.Thunders.API.Presenters;
 using Test.Thunders.Application.Base.Error;
-using Test.Thunders.Application.Person.V1.Commands.Update;
+using Test.Thunders.Application.TaskLists.V1.Commands.Update;
 
 namespace Test.Thunders.API.Controllers.TaskLists.V1;
 

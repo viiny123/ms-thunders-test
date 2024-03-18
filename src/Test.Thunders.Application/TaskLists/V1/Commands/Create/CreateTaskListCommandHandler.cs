@@ -1,10 +1,10 @@
 using System.Threading;
 using System.Threading.Tasks;
-using Test.Thunders.Domain.Base;
 using Test.Thunders.Application.Base;
 using Test.Thunders.Domain.AggregatesModel.TaskAggregate;
+using Test.Thunders.Domain.Base;
 
-namespace Test.Thunders.Application.Person.V1.Commands.Create;
+namespace Test.Thunders.Application.TaskLists.V1.Commands.Create;
 
 public class CreateTaskListCommandHandler : HandlerBase<CreateTaskListCommand>
 {

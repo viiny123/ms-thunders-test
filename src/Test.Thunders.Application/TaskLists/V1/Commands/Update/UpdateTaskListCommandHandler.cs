@@ -1,11 +1,11 @@
 using System.Threading;
 using System.Threading.Tasks;
-using Test.Thunders.Domain.Base;
 using Test.Thunders.Application.Base;
 using Test.Thunders.Application.Base.Error;
 using Test.Thunders.Domain.AggregatesModel.TaskAggregate;
+using Test.Thunders.Domain.Base;
 
-namespace Test.Thunders.Application.Person.V1.Commands.Update;
+namespace Test.Thunders.Application.TaskLists.V1.Commands.Update;
 
 public class UpdateTaskListCommandHandler : HandlerBase<UpdateTaskListCommand>
 {

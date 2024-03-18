@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Test.Thunders.API.Presenters;
 using Test.Thunders.Application.Base.Error;
-using Test.Thunders.Application.Person.V1.Commands.Delete;
+using Test.Thunders.Application.TaskLists.V1.Commands.Delete;
 
 namespace Test.Thunders.API.Controllers.TaskLists.V1;
 
