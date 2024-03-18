@@ -21,7 +21,7 @@ public partial class TaskListController
     [ProducesResponseType(typeof(CreateTaskListResponse), (int)HttpStatusCode.Created)]
     [ProducesResponseType(typeof(ResponseError<ErrorDetail>), (int)HttpStatusCode.NotFound)]
     [ProducesResponseType(typeof(ResponseError<ErrorDetail>), (int)HttpStatusCode.InternalServerError)]
-    public async Task<IActionResult> CreatePersonV1Async([FromBody] CreateTaskListRequest request)
+    public async Task<IActionResult> CreateTaskListV1Async([FromBody] CreateTaskListRequest request)
     {
         CreateTaskListCommand command = request;
         var result = await _mediator.Send(command);

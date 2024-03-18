@@ -22,7 +22,7 @@ public partial class TaskListController
     [ProducesResponseType((int)HttpStatusCode.NoContent)]
     [ProducesResponseType(typeof(ResponseError<ErrorDetail>), (int)HttpStatusCode.NotFound)]
     [ProducesResponseType(typeof(ResponseError<ErrorDetail>), (int)HttpStatusCode.InternalServerError)]
-    public async Task<IActionResult> DeletePersonV1Async([FromRoute] Guid id)
+    public async Task<IActionResult> DeleteTaskListV1Async([FromRoute] Guid id)
     {
         var result = await _mediator.Send(new DeleteTaskListCommand
         {

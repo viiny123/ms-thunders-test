@@ -15,9 +15,9 @@ namespace Test.Thunders.API.Controllers.TaskLists.V1;
 public partial class TaskListController
 {
     /// <summary>
-    /// Get persons
+    /// Get taskList
     /// </summary>
-    /// <param name="ednDate"></param>
+    /// <param name="endDate"></param>
     /// <param name="pageNumber"> Number of page</param>
     /// <param name="pageSize"> Max 10</param>
     /// <param name="description"></param>
@@ -29,15 +29,15 @@ public partial class TaskListController
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<GetTaskListQueryResponse>), (int)HttpStatusCode.OK)]
     [ProducesResponseType(typeof(ResponseError<ErrorDetail>), (int)HttpStatusCode.InternalServerError)]
-    public async Task<IActionResult> GetPersonsV1Async(
+    public async Task<IActionResult> GetTaskListV1Async(
         [FromQuery] string description,
         [FromQuery] Status? status,
         [FromQuery] DateTime? startDate,
-        [FromQuery] DateTime? ednDate,
+        [FromQuery] DateTime? endDate,
         [FromHeader(Name = "x-page-number")] int pageNumber = 1,
         [FromHeader(Name = "x-page-size")] int pageSize = 10)
     {
-        var queryRequest = new GetTaskListQuery(description, status, startDate, ednDate)
+        var queryRequest = new GetTaskListQuery(description, status, startDate, endDate)
             .WithPaginated(pageSize, pageNumber);
         var result = await _mediator.Send(queryRequest);
 

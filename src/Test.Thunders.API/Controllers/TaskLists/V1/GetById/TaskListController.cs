@@ -11,10 +11,10 @@ namespace Test.Thunders.API.Controllers.TaskLists.V1;
 public partial class TaskListController
 {
     /// <summary>
-    /// Get Person
+    /// Get taskList
     /// </summary>
     /// <returns></returns>
-    /// <response code="200">Value</response>
+    /// <response code="200">taskList</response>
     /// <response code="400">Bad Request</response>
     /// <response code="404">Not Found</response>
     /// <response code="500">Internal Server Errror</response>
@@ -23,7 +23,7 @@ public partial class TaskListController
     [ProducesResponseType(typeof(ResponseError<ErrorDetail>), (int)HttpStatusCode.BadRequest)]
     [ProducesResponseType(typeof(ResponseError<ErrorDetail>), (int)HttpStatusCode.NotFound)]
     [ProducesResponseType(typeof(ResponseError<ErrorDetail>), (int)HttpStatusCode.InternalServerError)]
-    public async Task<IActionResult> GetPersonByIdV1Async([FromRoute] Guid id)
+    public async Task<IActionResult> GetTaskListByIdV1Async([FromRoute] Guid id)
     {
         var queryRequest = new GetTaskListByIdQuery(id);
         var result = await _mediator.Send(queryRequest);
