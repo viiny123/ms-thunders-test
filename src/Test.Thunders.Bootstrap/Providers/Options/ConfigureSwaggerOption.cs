@@ -32,12 +32,12 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
     {
         var info = new OpenApiInfo()
         {
-            Title = "Test Raizen API",
+            Title = "Test API",
             Version = description.ApiVersion.ToString(),
             Description = "A sample application for test."
         };
 
-        if (description.IsDeprecated )
+        if (description.IsDeprecated)
         {
             info.Description += " This API version has been deprecated.";
         }
