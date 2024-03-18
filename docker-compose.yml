@@ -1,0 +1,17 @@
+version: "3.0"
+services:
+
+  sql-server:
+      image: "mcr.microsoft.com/mssql/server"
+      container_name: SQL_SERVER_LOCAL
+      ports:
+        - '1434:1433'
+      environment:
+        SA_PASSWORD: "Admin789"
+        ACCEPT_EULA: "Y"
+      networks:
+        - sql
+
+networks:
+  sql:
+    driver: bridge
